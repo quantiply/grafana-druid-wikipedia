@@ -70,8 +70,7 @@ define(['settings'], function(Settings) {
       datasources: {
         druid: {
           type: 'DruidDatasource',
-          url: '/docker-druid/v2'
-          // url: '/druid/v2/'
+          url: '/druid/v2'
         }
       },
 
