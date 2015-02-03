@@ -84,7 +84,7 @@ define(['settings'], function(Settings) {
       },
 
       // default home dashboard
-      default_route: '/dashboard/file/wikipedia/wikipedia.json',
+      default_route: '/dashboard/file/wikipedia.json',
 
       // set to false to disable unsaved changes warning
       unsaved_changes_warning: true,
