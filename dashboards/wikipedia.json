@@ -158,7 +158,7 @@
           "nullPointMode": "null as zero",
           "steppedLine": false,
           "tooltip": {
-            "value_type": "cumulative",
+            "value_type": "individual",
             "query_as_alias": true,
             "shared": false
           },
@@ -201,7 +201,8 @@
               "customGranularity": "minute",
               "limit": 10,
               "metric": "added",
-              "dimension": "country"
+              "dimension": "country",
+              "maxDataPoints": 60
             }
           ],
           "aliasColors": {},
@@ -248,27 +249,30 @@
             "threshold1Color": "rgba(216, 200, 27, 0.27)",
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
-          "lines": true,
+          "lines": false,
           "fill": 0,
           "linewidth": 1,
           "points": false,
           "pointradius": 5,
-          "bars": false,
-          "stack": false,
+          "bars": true,
+          "stack": true,
           "percentage": false,
           "legend": {
-            "show": true,
+            "show": false,
             "values": false,
             "min": false,
             "max": false,
             "current": false,
             "total": false,
-            "avg": false
+            "avg": false,
+            "rightSide": false,
+            "alignAsTable": false,
+            "hideEmpty": false
           },
-          "nullPointMode": "connected",
+          "nullPointMode": "null as zero",
           "steppedLine": false,
           "tooltip": {
-            "value_type": "cumulative",
+            "value_type": "individual",
             "shared": false
           },
           "targets": [
@@ -305,7 +309,8 @@
                   "dimension": "country",
                   "value": "United States"
                 }
-              ]
+              ],
+              "maxDataPoints": 60
             }
           ],
           "aliasColors": {},
